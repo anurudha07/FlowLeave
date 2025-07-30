@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors({
   origin: 'https://flowleave.onrender.com',
   credentials: true
-));
+}));
 
 app.use('/', userRoutes);
 app.use('/', leaveRoutes);
