@@ -3,12 +3,12 @@ import axios from 'axios';
 
 const BASE_URL = 'https://flowleave-backend.onrender.com';
 
-export const fetchLeaves = createAsyncThunk('leave/fetch', async () => {
-  const res = await axios.get(`${BASE_URL}/api/leave/all`); 
-  return Array.isArray(res.data) ? res.data : res.data.leaves || [];
+export const fetchUsers = createAsyncThunk('user/fetch', async ({ page, limit }) => {
+  const res = await axios.get(`${BASE_URL}/users?page=${page}&limit=${limit}`);
+  return Array.isArray(res.data) ? res.data : res.data.users || [];
 });
 
-export const applyLeave = createAsyncThunk('leave/apply', async (data) => {
-  const res = await axios.post(`${BASE_URL}/api/leave/apply`, data); 
+export const registerUser = createAsyncThunk('user/register', async (data) => {
+  const res = await axios.post(`${BASE_URL}/users`, data);
   return res.data;
 });
