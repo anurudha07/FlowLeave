@@ -31,7 +31,7 @@ export default function Navbar() {
               <MenuIcon fontSize="small" />
             </IconButton>
             <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
-              <List sx={{ width: 200, p: 0 }}>
+              <List sx={{ width: 110, p: 2 }}>
                 {navItems.map(item => (
                   <ListItem
                     button
