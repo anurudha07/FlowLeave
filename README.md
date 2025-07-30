@@ -1,83 +1,109 @@
-🌿 FlowLeave - Leave Management App
-A simple full-stack leave management system built using MERN + Redux. Employees can register and apply for leaves, and admins can view all leave requests.
+# 🚀 FlowLeave
 
-📁 Project Structure
-arduino
-Copy
-Edit
+**FlowLeave** is a minimal and efficient Leave Management System built with the MERN stack. It allows employees to apply for leave and admins to manage requests—simple, clean, and powerful.
+
+---
+
+## ✨ Features
+
+- 👥 User Registration
+- 📝 Leave Application
+- 📄 Leave List with Status
+- 🔒 Role-based Access (Admin/Employee)
+- 🌐 Fully Responsive UI
+- 🔄 Backend & Frontend connected via Render
+
+---
+
+## 🏗️ Project Structure
+
 FlowLeave/
+│
 ├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── .env
-│   └── server.js
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ ├── middlewares/
+│ ├── server.js
+│ └── .env (for local use)
+│
 ├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── features/
-│   │   │   ├── users/
-│   │   │   │   └── userThunks.js
-│   │   │   └── leaves/
-│   │   │       └── leaveThunks.js
-│   │   ├── pages/
-│   │   └── App.jsx
-│   └── vite.config.js
-└── README.md
-🚀 Live URLs
-Frontend: https://flowleave-frontend.onrender.com
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── features/
+│ │ ├── pages/
+│ │ ├── App.jsx
+│ │ └── main.jsx
+│ ├── vite.config.js
+│ └── package.json
+│
+├── README.md
+└── package.json (root optional)
 
-Backend API: https://flowleave-backend.onrender.com
-
-📦 Tech Stack
-Frontend: React + Vite + Redux Toolkit + MUI
-
-Backend: Node.js + Express + MongoDB + Mongoose
-
-Deployment: Render
-
-🛠 Setup Instructions
-✅ 1. Clone the Repository
-bash
+yaml
 Copy
 Edit
-git clone https://github.com/anurudha07/FlowLeave.git
-cd FlowLeave
-✅ 2. Backend Setup
-bash
-Copy
-Edit
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React + Redux Toolkit + Vite + MUI
+- **Backend**: Node.js + Express.js + MongoDB
+- **Database**: MongoDB Atlas
+- **Deployment**: Render
+
+---
+
+## 🚧 Local Setup
+
+### 🔐 Prerequisites
+
+- Node.js & npm
+- MongoDB Atlas URI
+- Git
+
+### ⚙️ Backend Setup
+
+```bash
 cd backend
 npm install
-Create .env file in /backend:
+# Create .env and add the following:
+# PORT=5000
+# MONGO_URI=your_mongo_uri
+npm start
+🖥️ Frontend Setup
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm run dev
+🚀 Deployment (Render)
+🔗 Backend (Web Service)
+Deploy /backend as a Web Service
 
-env
+Set up environment variables in Render:
+
+ini
 Copy
 Edit
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-Start backend:
+MONGO_URI=your_mongo_uri
+🌐 Frontend (Static Site)
+Hardcode BASE_URL = 'https://your-backend.onrender.com' in your thunks
 
-bash
-Copy
-Edit
-npm start
-✅ 3. Frontend Setup
-bash
-Copy
-Edit
-cd ../frontend
-npm install
-npm run dev
-To build for production:
+Build the frontend:
 
 bash
 Copy
 Edit
 npm run build
-📌 API Endpoints (Backend)
-Method	Endpoint	Description
-POST	/users	Register new user
-GET	/users	Get paginated users
-POST	/api/leave/apply	Apply for leave
-GET	/api/leave/all	Get all leave requests
+Deploy /frontend/dist as a Static Site
+
+🙌 Author
+Made with ❤️ by Anurudha
+
+📄 License
+This project is open-source and available under the MIT License.
