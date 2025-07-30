@@ -57,7 +57,7 @@ FlowLeave/
 
 ---
 
-## 🚧 Local Setup ---------> Developement 
+ 🚧 Local Setup ---------> Developement 
 
 ### 🔐 Prerequisites
 
