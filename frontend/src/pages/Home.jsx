@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
-import developerAnimation from '../assets/developer-animation.json'; // Adjust path if needed
+import developerAnimation from '../assets/developer-animation.json'; 
 
 const Home = () => (
   <Container disableGutters maxWidth={false}>
