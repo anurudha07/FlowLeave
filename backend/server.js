@@ -22,8 +22,8 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use('/api/users', userRoutes);
-app.use('/api/leave', leaveRoutes);
+app.use('/', userRoutes);
+app.use('/', leaveRoutes);
 app.use(errorHandler);
 
 
