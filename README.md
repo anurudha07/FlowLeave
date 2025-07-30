@@ -1,41 +1,41 @@
-# 🌿 FlowLeave
+# FlowLeave 📝
 
-A minimal full-stack leave management system built with MERN and Redux Toolkit.
-
----
-
-## 🌐 Live
-
-- **Frontend**: https://flowleave-frontend.onrender.com  
-- **Backend**: https://flowleave-backend.onrender.com
+<sub>A minimal leave management system built with the MERN stack + Redux.</sub>
 
 ---
 
-## 🗂️ Folder Structure
+## 🔧 Tech Stack
+- React + Vite + Redux Toolkit (Frontend)
+- Node.js + Express + MongoDB (Backend)
+- Render (Deployment)
+
+---
+
+## 📁 Project Structure
 
 FlowLeave/
-├── backend/ # Express backend
-│ ├── controllers/ # Route handlers
-│ ├── models/ # Mongoose schemas
-│ ├── routes/ # API routes
-│ ├── middleware/ # Custom middlewares
-│ ├── config/ # DB connection etc.
-│ ├── server.js # Entry point
-│ └── .env # Env vars (MONGO_URI, PORT)
-
-├── frontend/ # React + Redux frontend
+├── backend/
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ ├── middlewares/
+│ ├── .env
+│ └── server.js
+├── frontend/
 │ ├── src/
-│ │ ├── components/ # Reusable UI components
-│ │ ├── pages/ # Routes like Register, Dashboard
-│ │ ├── features/ # Redux slices & thunks
+│ │ ├── components/
+│ │ ├── features/
 │ │ │ ├── users/
+│ │ │ │ └── userThunks.js
 │ │ │ └── leaves/
+│ │ │ └── leaveThunks.js
+│ │ ├── pages/
 │ │ ├── App.jsx
 │ │ └── main.jsx
-│ ├── index.html
+│ ├── public/
 │ └── vite.config.js
-
-└── README.md
+├── README.md
+└── package.json
 
 yaml
 Copy
@@ -43,37 +43,47 @@ Edit
 
 ---
 
-## 🚀 Quick Start
+## ⚙️ Setup Instructions
 
-### Backend
+### Backend (Render Web Service)
+1. Create `.env` file:
+MONGO_URI=your_mongo_url
+PORT=5000
 
+bash
+Copy
+Edit
+2. Install dependencies:
 ```bash
 cd backend
 npm install
-# .env file with:
-# MONGO_URI=your_mongo_url
-# PORT=5000
-npm run dev
-Frontend
+npm start
+Frontend (Render Static Site)
+Update BASE_URL in userThunks.js & leaveThunks.js:
+
+js
+Copy
+Edit
+const BASE_URL = 'https://your-backend-url.onrender.com';
+Build frontend:
+
 bash
 Copy
 Edit
 cd frontend
 npm install
-npm run dev
-✅ To deploy:
+npm run build
+Deploy dist/ folder as a static site on Render.
 
-npm run build (frontend)
+✨ Features
+🧑‍💼 User Registration
 
-Use dist/ folder on Render Static Site
+📅 Leave Application
 
-Hardcode backend URL in userThunks.js & leaveThunks.js if needed
+✅ Admin Leave Approval
 
-🛠️ Stack
-Frontend: React, Redux Toolkit, Vite, Axios, Material UI
+🔒 Role-based UI (Admin & Employee)
 
-Backend: Node.js, Express.js, MongoDB
-
-Deployment: Render (Static + Web Service)
-
-© 2025 Anurudha Sarkar
+🧪 Live Demo
+Frontend: https://flowleave.onrender.com
+Backend: https://flowleave-backend.onrender.com
