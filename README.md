@@ -1,89 +1,83 @@
-# FlowLeave 📝
+🌿 FlowLeave - Leave Management App
+A simple full-stack leave management system built using MERN + Redux. Employees can register and apply for leaves, and admins can view all leave requests.
 
-<sub>A minimal leave management system built with the MERN stack + Redux.</sub>
-
----
-
-## 🔧 Tech Stack
-- React + Vite + Redux Toolkit (Frontend)
-- Node.js + Express + MongoDB (Backend)
-- Render (Deployment)
-
----
-
-## 📁 Project Structure
-
+📁 Project Structure
+arduino
+Copy
+Edit
 FlowLeave/
 ├── backend/
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middlewares/
-│ ├── .env
-│ └── server.js
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── .env
+│   └── server.js
 ├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── features/
-│ │ │ ├── users/
-│ │ │ │ └── userThunks.js
-│ │ │ └── leaves/
-│ │ │ └── leaveThunks.js
-│ │ ├── pages/
-│ │ ├── App.jsx
-│ │ └── main.jsx
-│ ├── public/
-│ └── vite.config.js
-├── README.md
-└── package.json
+│   ├── public/
+│   ├── src/
+│   │   ├── features/
+│   │   │   ├── users/
+│   │   │   │   └── userThunks.js
+│   │   │   └── leaves/
+│   │   │       └── leaveThunks.js
+│   │   ├── pages/
+│   │   └── App.jsx
+│   └── vite.config.js
+└── README.md
+🚀 Live URLs
+Frontend: https://flowleave-frontend.onrender.com
 
-yaml
-Copy
-Edit
+Backend API: https://flowleave-backend.onrender.com
 
----
+📦 Tech Stack
+Frontend: React + Vite + Redux Toolkit + MUI
 
-## ⚙️ Setup Instructions
+Backend: Node.js + Express + MongoDB + Mongoose
 
-### Backend (Render Web Service)
-1. Create `.env` file:
-MONGO_URI=your_mongo_url
-PORT=5000
+Deployment: Render
 
+🛠 Setup Instructions
+✅ 1. Clone the Repository
 bash
 Copy
 Edit
-2. Install dependencies:
-```bash
+git clone https://github.com/anurudha07/FlowLeave.git
+cd FlowLeave
+✅ 2. Backend Setup
+bash
+Copy
+Edit
 cd backend
 npm install
-npm start
-Frontend (Render Static Site)
-Update BASE_URL in userThunks.js & leaveThunks.js:
+Create .env file in /backend:
 
-js
+env
 Copy
 Edit
-const BASE_URL = 'https://your-backend-url.onrender.com';
-Build frontend:
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+Start backend:
 
 bash
 Copy
 Edit
-cd frontend
+npm start
+✅ 3. Frontend Setup
+bash
+Copy
+Edit
+cd ../frontend
 npm install
+npm run dev
+To build for production:
+
+bash
+Copy
+Edit
 npm run build
-Deploy dist/ folder as a static site on Render.
-
-✨ Features
-🧑‍💼 User Registration
-
-📅 Leave Application
-
-✅ Admin Leave Approval
-
-🔒 Role-based UI (Admin & Employee)
-
-🧪 Live Demo
-Frontend: https://flowleave.onrender.com
-Backend: https://flowleave-backend.onrender.com
+📌 API Endpoints (Backend)
+Method	Endpoint	Description
+POST	/users	Register new user
+GET	/users	Get paginated users
+POST	/api/leave/apply	Apply for leave
+GET	/api/leave/all	Get all leave requests
