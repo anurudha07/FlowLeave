@@ -68,14 +68,24 @@ FlowLeave/
  ⚙️ Project Setup
 
 ```
+
+🛠️ Installation
+
+Download the zip code from https://github.com/anurudha07/FlowLeave
+Open uin VS code or any other relevant code editor
+
+Proceed with following steps further...
+
 🔗 Backend Setup
 
-cd backend
-npm i 
 # Create .env and add the following:
 # PORT=5000
 # MONGO_URI=your_mongo_uri       - from MongoDB Atlas
+cd backend
+npm i
 npm run dev
+
+
 
 🖥️ Frontend Setup
 
