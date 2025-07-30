@@ -1,4 +1,4 @@
-# 🚀 FlowLeave
+#  FlowLeave
 
 **FlowLeave** is a minimal and efficient Leave Management System built with the MERN stack. It allows employees to apply for leave and admins to manage requests—simple, clean, and powerful.
 
