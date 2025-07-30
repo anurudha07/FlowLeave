@@ -1,4 +1,3 @@
-// frontend/src/components/Navbar.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
