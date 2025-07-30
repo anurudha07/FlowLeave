@@ -17,6 +17,7 @@
 
  🏗️ Project Structure
 
+```
 FlowLeave/
 │
 ├── backend/
@@ -44,7 +45,7 @@ FlowLeave/
 │
 ├── README.md
 
-
+```
 
 ---
 
