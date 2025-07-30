@@ -1,12 +1,14 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-export const fetchLeaves = createAsyncThunk('leave/fetch', async () => {
-  const res = await axios.get('http://localhost:5000/api/leave/all');
-  return Array.isArray(res.data) ? res.data : res.data.leaves || [];
+const BASE_URL = 'https://myapp-backend.onrender.com'; // ⬅️ Add this line
+
+export const registerUser = createAsyncThunk('user/register', async (data) => {
+  const res = await axios.post(`${BASE_URL}/api/users/register`, data); // ⬅️ Update
+  return res.data;
 });
 
-export const applyLeave = createAsyncThunk('leave/apply', async (data) => {
-  const res = await axios.post('http://localhost:5000/api/leave/apply', data);
+export const loginUser = createAsyncThunk('user/login', async (data) => {
+  const res = await axios.post(`${BASE_URL}/api/users/login`, data); // ⬅️ Update
   return res.data;
 });
