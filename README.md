@@ -4,7 +4,7 @@
 
 ---
 
-## ✨ Features
+ ✨ Features
 
 - 👥 User Registration
 - 📝 Leave Application
@@ -15,7 +15,7 @@
 
 ---
 
-## 🏗️ Project Structure
+ 🏗️ Project Structure
 
 FlowLeave/
 │
@@ -48,7 +48,7 @@ FlowLeave/
 
 ---
 
-## 🛠️ Tech Stack
+ 🛠️ Tech Stack
 
 - **Frontend**: React + Redux Toolkit + Vite + MUI
 - **Backend**: Node.js + Express.js + MongoDB
@@ -59,13 +59,13 @@ FlowLeave/
 
  🚧 Local Setup ---------> Developement 
 
-### 🔐 Prerequisites
+ 🔐 Prerequisites
 
 - Node.js & npm
 - MongoDB Atlas URI
 - Git
 
-### ⚙️ Project Setup
+ ⚙️ Project Setup
 
 ```
 🔗 Backend Setup
