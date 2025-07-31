@@ -94,7 +94,28 @@ cd frontend
 npm i
 npm run dev
 
-📝 Note: Also change the
+
+
+📝 Note: Also change the files ----->
+
+backend/server.js:
+
+app.use(cors({
+   origin: true,    < ----------  here!
+   credentials: true
+}));
+
+
+
+userThunks.js && leaveThunks.js:
+
+const BASE_URL = 'http://localhost:<YOUR_PORT>';
+
+
+For API Testing using Postman or any other relevant -
+
+https://anurudhasarkar.postman.co/workspace/My-Workspace~af99c54d-fd96-49e7-8bbb-220038a8c381/collection/45057045-5f24c1e1-dae6-49a7-a582-d78275356ac1?action=share&source=copy-link&creator=45057045
+
 
 🚀 Deployment (Render)      ---render.com
 🔗 Backend (Web Service)
