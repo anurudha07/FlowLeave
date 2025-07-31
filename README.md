@@ -1,6 +1,6 @@
 ##  FlowLeave 📜
 
-**FlowLeave** is a minimal and efficient Leave Management System built with the MERN stack. 
+**FlowLeave** is a minimal and efficient Leave Management System flow built with the MERN stack. 
 
 ---
 
