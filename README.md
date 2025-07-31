@@ -114,7 +114,10 @@ const BASE_URL = 'http://localhost:<YOUR_PORT>';
 
 For API Testing using Postman or any other relevant -
 
-https://anurudhasarkar.postman.co/workspace/My-Workspace~af99c54d-fd96-49e7-8bbb-220038a8c381/collection/45057045-5f24c1e1-dae6-49a7-a582-d78275356ac1?action=share&source=copy-link&creator=45057045
+1. POST    http://localhost:5000/users  – To register a user
+2. GET     http://localhost:5000/users – To retrieve a list of registered users
+3. POST    http://localhost:5000/api/leave/apply  – To apply for leave
+4. GET     http://localhost:5000/api/leave/all  – Admin fetches all leave requests
 
 
 🚀 Deployment (Render)      ---render.com
