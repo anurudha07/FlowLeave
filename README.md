@@ -94,6 +94,8 @@ cd frontend
 npm i
 npm run dev
 
+📝 Note: Also change the
+
 🚀 Deployment (Render)      ---render.com
 🔗 Backend (Web Service)
 🖥️ Frontend (static)
