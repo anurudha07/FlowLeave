@@ -72,7 +72,7 @@ FlowLeave/
 
 🛠️ Installation
 
-Download the zip code from https://github.com/anurudha07/FlowLeave
+Download the zip file from https://github.com/anurudha07/FlowLeave
 Open uin VS code or any other relevant code editor
 
 Proceed with following steps further...
